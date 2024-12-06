@@ -1,0 +1,16 @@
+@baseUrl = http://localhost:3000/api
+
+### test
+POST {{baseUrl}}/test
+
+### generate wallpaper 
+POST {{baseUrl}}/gen-wallpaper
+content-type: application/json
+
+{
+    "description": "两只小猫在公园打架"
+}
+
+### get wallpapers
+GET {{baseUrl}}/get-wallpapers
+
